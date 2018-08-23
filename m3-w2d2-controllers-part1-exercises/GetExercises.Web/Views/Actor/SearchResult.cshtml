@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "SearchResult";
+}
+
+@model IEnumerable<GetExercises.Web.Models.Actor>
+@using GetExercises.Web.Models
+
+<h2>SearchResult</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<table class="table">
+    <tr>
+        <th>Actor Name</th>
+    </tr>
+
+    @foreach (Actor actor in Model)
+    {
+        <tr>
+            <td>
+                @actor.LastName, @actor.FirstName
+            </td>
+        </tr>
+    }
+</table>
+
+
+
+
+

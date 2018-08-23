@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model GetExercises.Web.Models.Customer
+<h2>Customer Search</h2>
+
+@using (Html.BeginForm("SearchResult", "Customer"))
+{
+    <div>
+        Name @Html.TextBox("Name", null, new { @class = "form-control" })
+    </div>
+
+    <div>
+        Sort By
+        <select class="form-control" id="sortBy" name="SortBy">
+            <option value="1">Last Name</option>
+            <option value="2">Email</option>
+            <option value="3">Active</option>
+        </select>
+    </div>
+
+    <button>Search</button>
+}

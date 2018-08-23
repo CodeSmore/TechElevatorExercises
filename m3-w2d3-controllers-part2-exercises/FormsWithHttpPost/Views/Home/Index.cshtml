@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using FormsWithHttpPost.Models;
+@model IEnumerable<FormsWithHttpPost.Models.Review>
+
+
+<h2>Past Reviews</h2>
+
+<p>
+    @Html.ActionLink("Create New", "SubmitReview")
+</p>
+
+@{
+    string color = "";
+}
+<table class="table">
+    @foreach (Review item in Model)
+    {
+        if (color == "" || color == "gray")
+        {
+            color = "white";
+        }
+        else {
+            color = "gray";
+        }
+        <tr style="background-color:@color"> 
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <th>
+                @Html.DisplayFor(model => item.ReviewDate)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,21 @@
+﻿@{
+    string word = Request.QueryString["word"];
+    int count = int.Parse(Request.QueryString["count"]);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Echo</title>
+</head>
+
+<body>
+    <h1><font size="8">Exercise 3 - Echo</font></h1>
+    @for (int i = count; i > 0; --i)
+    {
+        <div><font size=@i>@word.ToString()</font></div>
+    }
+</body>
+</html>

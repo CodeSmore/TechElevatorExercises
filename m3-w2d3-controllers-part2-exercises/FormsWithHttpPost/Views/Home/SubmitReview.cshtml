@@ -1,0 +1,33 @@
+﻿@using FormsWithHttpPost.Models
+@model Review
+@{
+    ViewBag.Title = "SubmitReview";
+}
+
+<h2>New Book Review</h2>
+
+<form action="@Url.Action("PostSurvey", "Home")" method="post">
+    <div class="formValidationGroup">
+        Enter your username
+        @Html.TextBoxFor(m => m.Username)
+        @Html.ValidationMessage("Review")
+    </div>
+
+    <div>
+        How many stars?
+        @Html.TextBoxFor(m => m.Rating)
+    </div>
+
+    <div>
+        Provide a title
+        @Html.TextBoxFor(m => m.Title)
+    </div>
+
+    <div>
+        Review
+        @Html.TextBoxFor(m => m.Message)
+    </div>
+
+    <button>Submit</button>
+</form>
+

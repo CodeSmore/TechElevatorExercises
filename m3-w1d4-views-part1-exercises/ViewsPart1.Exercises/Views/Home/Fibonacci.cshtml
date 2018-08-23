@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Fibonacci</title>
+</head>
+
+<body>
+    <h1><font size="8">Exercise 2 - Fibonacci 25</font></h1>
+    @{ 
+        int sum = 0, prev = 1, prev2 = 0, num = 1;
+    }
+    @for (int i = 0; i < 25; ++i)
+    {
+        <li>@num</li>
+        prev2 = num;
+        num += prev;
+        prev = prev2;
+    }
+</body>
+</html>
+
+
+

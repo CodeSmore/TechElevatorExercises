@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <div>
+        <h1><font size="8">Exercise 1 - FizzBuzz</font></h1>
+        @for (int i = 1; i <= 100; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                <li style="color:darkviolet"><font size="6">FizzBuzz!</font></li>
+            }
+            else if (i % 5 == 0)
+            {
+                <li style="color:red"><font size="5">Buzz!</font></li>
+            }
+            else if (i % 3 == 0)
+            {
+                <li style="color:dodgerblue"><font size="5">Fizz!</font></li>
+            }
+            else
+            {
+                <li>@i</li>
+            }
+        }
+    </div>
+</body>
+</html>

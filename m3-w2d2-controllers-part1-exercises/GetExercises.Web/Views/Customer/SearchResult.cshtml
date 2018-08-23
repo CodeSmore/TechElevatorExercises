@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "SearchResult";
+}
+
+@using GetExercises.Web.Models
+
+<h2>SearchResult</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Active</th>
+    </tr>
+
+    @foreach (Customer customer in Model)
+    {
+        <tr>
+            <td>@customer.LastName, @customer.FirstName</td>
+            <td>@customer.Email</td>
+            <td>@customer.IsActive</td>
+        </tr>
+    }
+</table>

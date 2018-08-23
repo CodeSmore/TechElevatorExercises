@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "SearchResult";
+}
+
+@using GetExercises.Web.Models
+
+<h2>SearchResult</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<table class="table">
+    <tr>
+        <th>Film Title</th>
+        <th>Description</th>
+        <th>Release Year</th>
+        <th>Length in Mins</th>
+        <th>Rating</th>
+    </tr>
+
+    @foreach (Film film in Model)
+    {
+        <tr>
+            <td>
+                @film.Title
+            </td>
+            <td>@film.Description </td> 
+            <td>@film.ReleaseYear</td>    
+            <td>@film.Length</td>    
+            <td>@film.Rating</td>
+            
+        </tr>
+    }
+</table>

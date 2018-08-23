@@ -1,0 +1,106 @@
+
+/*Exercise 1*/
+
+html {
+  font: 96px Courier;
+  color: white;
+}
+.box {
+  padding: 50px;
+  width: 70px;
+}
+.odd {
+  background-color: #ee3e64;
+}
+.even {
+  background-color: #44accf;
+}
+
+/*Exercise 2*/
+/*
+.box
+{
+	display: inline;	
+}
+/*
+
+/*Exercise 3*/
+/*
+.box
+{
+	position: relative;
+}
+
+#box_1, #box_8
+{
+	left: 170px;
+}
+#box_2, #box_7
+{
+	left: 340px;
+}
+#box_3, #box_6
+{
+	left: 510px;
+}
+#box_4, #box_5
+{
+	left: 680px;
+}
+*/
+
+/*Exercise 4*/
+/*
+.box
+{
+	position: absolute;
+}
+#box_0
+{
+	left: 255px;
+}
+#box_1
+{
+	left: 170px;
+	top: 215px;
+}
+#box_2 
+{
+	left: 340px;
+	top: 215px;
+}
+#box_3 
+{
+	left: 85px;
+	top: 422px;
+}
+#box_4
+{
+	left: 255px;
+	top:422px;
+}
+#box_5
+{
+	left: 425px;
+	top: 422px;
+}
+#box_6
+{
+	top: 631px;
+}
+#box_7
+{
+	top: 631px;
+	left: 170px;
+}
+#box_8
+{
+	top: 631px;
+	left: 340px;
+}
+#box_9
+{
+	top: 631px;
+	left: 510px;
+}
+*/

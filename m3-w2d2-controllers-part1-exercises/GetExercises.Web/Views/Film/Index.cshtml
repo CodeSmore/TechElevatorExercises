@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model GetExercises.Web.Models.Film
+
+<h2>Film Search</h2>
+
+@using (Html.BeginForm("SearchResult", "Film"))
+{
+    <div>
+        Category @Html.TextBox("Category", null, new { @class = "form-control" })
+    </div>
+
+    <div>
+        Min Length
+        @Html.TextBox("Min", null, new { @class = "form-control" })
+    </div>
+
+    <div>
+        Max Length
+        @Html.TextBox("Max", null, new { @class = "form-control" })
+    </div>
+    
+    <button>Submit</button>
+}
